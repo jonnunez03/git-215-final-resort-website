@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jonathan Nunez" />
+    <title>White Haven Lodge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/mountain-snow.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="hero-img">
+          <img
+            src="./images/swiss-valley.jpg"
+            alt="Green valley with river flowing down the middle and snowy mountain background"
+            width="1440"
+            height="560"
+          />
+        </div>
+        <div class="title-and-nav-container">
+          <h1><a href="index.html">White Haven Lodge</a></h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Accommodations</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section id="contact-us">
+          <div class="form-and-img-container">
+            <div class="contact-text-and-text">
+              <h2>Contact Us</h2>
+
+              <p>
+                Please reach out to us with any questions or concerns. We are
+                happy to help you plan your dream vacation with us! Required
+                fields marked with a *
+              </p>
+              <div class="snowy-mountain-img">
+                <img
+                  src="./images/swiss-peak.jpg"
+                  alt="Grassy mountain side view of luxurious lodges"
+                />
+              </div>
+            </div>
+            <form
+              action=" https://wp.zybooks.com/form-viewer.php"
+              method="POST"
+              target="_blank"
+            >
+              <label for="full-name" class="required-label">Full Name*:</label>
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                placeholder="Peter Parker"
+                required
+              />
+              <label for="email" class="required-label">Email Address*:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="amazing_spiderman@mavel.com"
+                required
+              />
+              <label for="phone" class="required-label">Phone Number*:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="2815555555"
+                required
+              />
+              <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <div class="radio-container">
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    value="email"
+                    id="email-pref"
+                  />
+                  <label for="email-pref">Email</label>
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    value="phone"
+                    id="phone-pref"
+                  />
+                  <label for="phone-pref">Phone</label>
+                </div>
+              </fieldset>
+
+              <label for="comments">Comments</label>
+              <textarea name="comments" id="comments"></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Copyright ©2023 - White Haven Lodge</p>
+        <p>This site is for educational purposes only</p>
+      </footer>
+    </div>
+  </body>
+</html>
